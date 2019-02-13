@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block konten %}
+<div class="container mb-5">
+    <center>
+        <h3 class="mt-5">Our Mentor</h3>
+    </center>
+
+    {% for kontenmentors in kontenmentor %}
+    <div class="row justify-content-md-center mt-5 col-sm-12">
+        <div class="col col-lg-3 col-md-6">
+            <img src="{{kontenmentors.gambar}}" alt="" style="height:150px;">
+        </div>
+        <div class="col col-lg-5 col-sm-12 ml-5 col-md-6">
+            <h4>{{kontenmentors.nama}}</h4>
+            <p>{{kontenmentors.pengalaman}}</p>
+            <span>{{kontenmentors.komentar}}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

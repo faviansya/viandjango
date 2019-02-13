@@ -1,0 +1,121 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block konten %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col col-4 ml-lg-auto">
+                <img src="{% static 'img/benefit.png' %}" alt="">
+            </div>
+            <div class="col col-12 col-lg-6 mr-auto">
+                <h4>Learn Awesome Tech</h4>
+                <p>You will learn about programming language, such as Python and Javascript, build back-end apps
+                    using
+                    Flask framework with microservice concept, build client-site apps using React Library, etc.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-4 ml-lg-auto">
+                <img src="{% static 'img/search-job.png' %}" alt="">
+            </div>
+            <div class="col col-12 col-lg-6 mr-auto">
+                <h4>Lean New Job</h4>
+                <p>If you can pass this awesome program, you will be part of our reliable tech team for especially
+                    Software Engineer position and other tech position such as Quality Engineer, System Analyst,
+                    etc.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-4 ml-lg-auto">
+                <img src="{% static 'img/get-paid.png' %}" alt="">
+            </div>
+            <div class="col col-12 col-lg-6 mr-auto">
+                <h4>Get Paid to Learn</h4>
+                <p>Join for free and earn some money. Yes you read that right, no registration fee required to
+                    enter this program. To make things even better, you will receive pocket money just for
+                    participating. Cool, right?
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col col-4 ml-lg-auto">
+                <img src="{% static 'img/mission.png' %}" alt="">
+            </div>
+            <div class="col col-12 col-lg-6 mr-auto m-sm-auto">
+                <div class="row">
+                    <h2>Who We Are?</h2>
+                    <p>You will learn about programming language, such as Python and Javascript, build back-end
+                        apps
+                        using
+                        Flask framework with microservice concept, build client-site apps using React Library, etc.
+                    </p>
+                </div>
+                <div class="row mt-3 col-sm-12">
+                    <h2>What is Our Mission</h2>
+                    <p>
+                        We want to improve capability tech tallent in Indonesia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <center>
+        <h4>What Will You Learn?</h4>
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-12 col-lg-3 col-md-6 mt-sm-5">
+                <img src="{% static 'img/learn-html.png' %}" alt="">
+                <figcaption class="figure-caption text-center mt-2">Basic of Web Development
+                </figcaption>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-6 mt-sm-5">
+                <img src="{% static 'img/learn-programming.png' %}" alt="">
+                <figcaption class="figure-caption text-center  mt-2">Basic of Programming
+                </figcaption>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-6 mt-sm-5">
+                <img src="{% static 'img/learn-git.png' %}" alt="">
+                <figcaption class="figure-caption text-center mt-4">Versioning Control with Git
+                </figcaption>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-6 m-auto mt-sm-5">
+                <img src="{% static 'img/learn-api.png' %}" alt="">
+                <figcaption class="figure-caption text-center mt-3">Rest API
+                </figcaption>
+            </div>
+        </div>
+    </center>
+    <center>
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-12 col-lg-3 col-md-6 mt-sm-5">
+                <img src="{% static 'img/learn-react.png' %}" alt="">
+                <figcaption class="figure-caption text-center mt-2">Build Client-site Apps
+                </figcaption>
+
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-6 mt-sm-5">
+                <img src="{% static 'img/learn-tdd.png' %}" alt="">
+                <figcaption class="figure-caption text-center mt-2">Test-Driven Development
+                </figcaption>
+
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-6 mt-sm-5 ">
+                <img src="{% static 'img/learn-server.png' %}" alt="">
+                <figcaption class="figure-caption text-center mt-2">Serverless
+                </figcaption>
+
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-6 mt-sm-5">
+                <img src="{% static 'img/learn-scrum.png' %}" alt="">
+                <figcaption class="figure-caption text-center mt-2">Scrum
+                </figcaption>
+
+            </div>
+        </div>
+    </center>
+</div>
+{% endblock %}

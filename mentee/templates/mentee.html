@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block konten %}
+<div class="container">
+    <div class="mb-5">
+        <center>
+            <h3 class="mt-5">Our Mentee</h3>
+        </center>
+    {% for isimentee in kontenmentees %}
+        <div class="row justify-content-md-center mt-5 col-sm-12">
+            <div class="col col-lg-2 col col-md-6">
+                <img src="{{isimentee.gambar}}" alt="" style="height:150px;">
+            </div>
+            <div class="col col-lg-5 col-md-6">
+                <h4>{{isimentee.nama}}</h4>
+                <span>{{isimentee.komentar}}</span>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}
