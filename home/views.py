@@ -6,9 +6,6 @@ from django.shortcuts import render
 def home(request):
     urls = {
         'halamanhome': '/',
-        'halamanblog': '/blog',
-        'halamanmentor': '/mentor',
-        'halamanmentee': '/mentee',
-        'halamanauthor': '/author',
+        'toko': '/toko',
     }
-    return render(request, 'home.html', urls)
+    return render(request, 'homes.html', urls)

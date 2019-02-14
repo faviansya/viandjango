@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block konten %}
+<div class="container mb-5 mt-5">
+    <div class="row mt-4">
+        <div class="col-sm">
+        </div>
+        <div class="col-sm border border-secondary" style="padding:50px">
+            <div class="row">
+                <img src="{{kontenblog.gambar}}" alt="" style="width: 500px;height: 350px;" class="mb-4">
+                <h1>{{kontenblog.judul}}</h1>
+            </div>
+            <div class="row">
+                <h5>{{kontenblog.harga}}</h5>
+            </div>
+            <div class="row">
+                <ul style="list-style: none;" >
+                    <li>{{kontenblog.deskripsi}}</li>
+                    <li>{{kontenblog.deskripsi1}}</li>
+                    <li>{{kontenblog.deskripsi2}}</li>
+                    <li>{{kontenblog.deskripsi3}}</li>
+                    <li>{{kontenblog.deskripsi4}}</li>
+                    <li>{{kontenblog.deskripsi5}}</li>
+                    <li>{{kontenblog.deskripsi6}}</li>
+                </ul>
+            </div>
+            <div class="row">
+                <p class="mb-5"><a href="{{toko}}"> Kembali Ke Toko</a></p>
+
+            </div>
+
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+enctype
