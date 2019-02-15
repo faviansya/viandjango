@@ -1,0 +1,66 @@
+.navbarhomeposition{
+    height: 30px; 
+}
+
+#topnavbar{
+    background-color: red;
+    padding: 5px;
+}
+
+#a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.copyright{
+    background-color: black;
+    font-size: 14px;
+    color: white;
+}
+.bigfooter{
+    background-color: #2b2b2b;
+    color:white;
+    font-size: 15px;
+}
+#gambarpostingan{
+    width:auto;
+}
+
+.resize {
+    width: auto; /* you can use % */
+    height: 400px;
+}
+#imgcard{
+    height: 140px;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+.containerssss {
+    position: relative;
+    font-family: Arial;
+  }
+  
+.text-block {
+    background-color:rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0px;
+    right: 21px;
+    left: 22px;
+
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+#text-block1 {
+    background-color:rgb(255, 0, 0,0.7);
+    right: 5px;
+    left: 14px;
+    top: 120px;
+    bottom: 0px;
+}

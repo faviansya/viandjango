@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block konten %}
+<div class="container mb-5 mt-5">
+    <div class="row mt-4">
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+            <div class="row">
+                <h1>New Post</h1>
+                <form method="POST" class="">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit" value="Go to Base">save</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

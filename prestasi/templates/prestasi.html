@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block konten %}
+<div class="container">
+    <div class="row" style="padding:10px;">
+        {% for postingan in prestasiterbaru %}
+        <div class="col-sm col-lg-4 shadow animated fadeInUpBig" data-toggle="tooltip" data-placement="bottom" title="{{postingan.judul}}">
+            <div class="containersss">
+                <a href="{% url 'fullpageprestasi' blog_id=postingan.id %}">
+                   <center><img src="{{postingan.gambar.url}}" alt="" style="width: 330px;height: 250px;"></center>
+                    <div class="text-block">
+                        <p>{{postingan.judul|truncatechars:70}}</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}
