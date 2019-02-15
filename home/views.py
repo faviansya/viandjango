@@ -5,7 +5,7 @@ from .forms import PostForm, BeritaForm
 
 def home(request):
     dbHome = Posting.objects.filter(statuspublih=True)
-    posts = Posting.objects.filter().order_by('-jadwal_publish')[0:3]
+    posts = Posting.objects.filter(statuspublih=True).order_by('-jadwal_publish')[0:3]
     videocontenct = YoutubeVideo.objects.filter(
         statuspublih=True).order_by('-jadwal_publish')[0:3]
     data = {
