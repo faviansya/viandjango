@@ -9,7 +9,7 @@
         <div class="col-sm">
             <div class="row">
                 <h1>Post Berita Baru</h1>
-                <form method="POST" class="">
+                <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{form.as_p}}
                     <button type="submit" value="Go to Base">save</button>

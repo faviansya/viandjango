@@ -53,7 +53,7 @@ def tambahcomment(request, blog_id):
 
 def tambahberita(request):
     if request.method == 'POST':
-        form = BeritaForm(request.POST)
+        form = BeritaForm(request.POST,request.FILES)
         if form.is_valid():
             form.save()
             return redirect('waiting')
